@@ -1,0 +1,32 @@
+<!--{% extends 'base.html' %}-->
+<!--{% block content %}-->
+<form method="POST">
+<div class="col-md-6">
+          <div class="card card-primary">
+            <div class="card-header">
+<!--              <h3 class="card-title">General</h3>-->
+
+              <div class="card-tools">
+<!--                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">-->
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                  {% csrf_token %}
+                  {{ form.as_p }}
+
+<div class="col-12">
+
+
+    <a href="employees_list" class="btn btn-secondary">
+        <input type="submit" value="Save" class="btn btn-primary">
+    </a>
+
+
+        </div>
+</form>
+<!--{% endblock %}-->
+
+
